@@ -102,22 +102,7 @@
                 die('Erreur : '.$e->getMessage());
             }
         }
-        //fonction mise à jour de la visibilité des produits
-        public function updateMaskProd($bdd, $value){
-            try
-            {
-                //requete pour update le statut du produit = 1 (true)
-                $req = $bdd->prepare('UPDATE product SET visible_prod = 0 Where id_prod =:id_prod');
-                $req->execute(array(
-                    'id_prod' => $value,
-                ));
-            }
-            catch(Exception $e)
-            {   
-                //affichage d'une exception
-                die('Erreur : '.$e->getMessage());
-            }
-        }
+    
         //fonction afficher les produits avec checkbox
         public function showProdUser($bdd){
             try
