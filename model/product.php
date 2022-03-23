@@ -69,7 +69,7 @@
                 die('Erreur : '.$e->getMessage());
             }
         }
-        //fonction mise à jour de la visibilité des produits admin
+        //fonction mise à jour de la visibilité des produits (sélectionnés) admin
         public function updateProd($bdd, $value){
             try
             {
@@ -105,7 +105,7 @@
             }
         }
     
-        //fonction afficher les produits avec checkbox user
+        //fonction afficher les produits visible_prod = 1 user
         public function showProdUser($bdd){
             try
             {   //visible_prod à 1 pour afficher que les produits qui ont le statut
