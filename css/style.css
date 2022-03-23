@@ -1,0 +1,7 @@
+/* class pour statut si show (visible_prod = 1) sinon none */
+.show{
+    color :yellowgreen;
+}
+.none{
+    color:red;
+}
