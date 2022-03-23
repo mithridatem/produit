@@ -39,7 +39,7 @@
             $this->visible_prod = $newVisible;
         }
         //méthodes
-        //fonction afficher les produits avec checkbox
+        //fonction afficher les produits avec checkbox admin
         public function showProd($bdd){
             try
             {
@@ -67,7 +67,7 @@
                 die('Erreur : '.$e->getMessage());
             }
         }
-        //fonction mise à jour de la visibilité des produits
+        //fonction mise à jour de la visibilité des produits admin
         public function updateProd($bdd, $value){
             try
             {
@@ -103,7 +103,7 @@
             }
         }
     
-        //fonction afficher les produits avec checkbox
+        //fonction afficher les produits avec checkbox user
         public function showProdUser($bdd){
             try
             {   //visible_prod à 1 pour afficher que les produits qui ont le statut
