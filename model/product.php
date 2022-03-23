@@ -5,6 +5,7 @@
         private $name_prod;
         private $content_prod;
         private $visible_prod;
+        
         //getter et setter
         //getter idProd
         public function getIdProd(){
@@ -38,6 +39,7 @@
         public function setvisibleProd($newVisible){
             $this->visible_prod = $newVisible;
         }
+
         //méthodes
         //fonction afficher les produits avec checkbox admin
         public function showProd($bdd){
